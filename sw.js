@@ -3,7 +3,7 @@ self.importScripts('data/dashboards.js');
 // Files to cache
 var cacheName = 'dashboardsCache';
 var appShellFiles = [
-  '/index.html'
+  '/dashboards/index.html'
 ];
 
 // Installing Service Worker
