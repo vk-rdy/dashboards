@@ -37,6 +37,10 @@ if ('serviceWorker' in navigator) {
         });
   });
 }
+if (!('Notification' in window)) {
+  alert('This browser does not support notifications!');
+  return;
+}
 </script>
 </body>
 </html>
