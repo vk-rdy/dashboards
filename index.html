@@ -3,7 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Dashboards</title>
-	<meta name="description" content="portal Dashboards">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Portal Dashboards">
+	<link rel="apple-touch-icon" href="/icons/icon-152x152.png">
+	<meta name="description" content="Portal Dashboards">
 	<meta name="author" content="vkarla">
 	<meta name="theme-color" content="#B12A34">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,5 +28,15 @@
 <footer>
 
 </footer>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+        .then((reg) => {
+          console.log('Service worker registered.', reg);
+        });
+  });
+}
+</script>
 </body>
 </html>
